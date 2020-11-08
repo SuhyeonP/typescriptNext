@@ -1,0 +1,67 @@
+@media (min-width: 1024px) {
+    .game-section ,.mine-section{
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .baseball input{
+        width: 50vw;
+        height:10vh;
+        font-size: 35px;
+        vertical-align: top;
+    }
+    .baseball h1{
+        font-size: 22px;
+        padding: 10px 0;
+        color:navy;
+    }
+    .baseball button{
+        height: 10vh;
+        margin-left: 2vw;
+        width: 5vw;
+        font-size: 25px;
+    }
+    .baseball>div{
+        font-size: 31px;
+
+    }
+    .baseball>li{
+        display: flex;
+    }
+    .baseball li>div{
+        display: inline-block;
+        padding-top: 2vh;
+    }
+    .mine-section input{
+        width: 30%;
+        height: 5vh;
+        margin: 0 10px 5vh;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .mine-section button{
+        display: block;
+        width: 10vw;
+        height: 6vh;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .mine-section table{
+        width: 40vw;
+        height: 40vw;
+        margin: 10vh auto;
+    }
+    .mine-result{
+        font-weight: 800;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 678px){
+    .game-section{
+        width: 80vw;
+    }
+}
+@media (max-width: 677px){
+
+}
+

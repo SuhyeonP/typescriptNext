@@ -1,0 +1,49 @@
+@media (min-width: 1024px) {
+    .menu-div{
+        width: 90vw;
+        margin: 0 auto;
+        padding: 5vh 0;
+    }
+    .main-layout{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-layout li>a{
+        font-size: 22px;
+        font-weight: 800;
+    }
+}
+@media (max-width: 1023px) and (min-width: 678px){
+    .menu-div{
+        width: 90vw;
+        margin: 0 auto;
+        padding: 5vh 0;
+    }
+    .main-layout{
+        display: flex;
+    }
+    .main-layout li>a{
+        font-size: 18px;
+        font-weight: 800;
+    }
+}
+@media (max-width: 677px){
+
+}
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul,li{
+    list-style: none;
+}
