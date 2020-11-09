@@ -3,6 +3,7 @@ import Gheader from "../../../component/Gheader";
 import Gfooter from "../../../component/gikalFoot";
 import {useRouter} from "next/router";
 import {expresult,breath,charName,imgsrc} from '../util/gikalResultArray'
+import Link from "next/link";
 
 const SelectorG:React.FC=()=>{
     const router2=useRouter();
@@ -30,6 +31,7 @@ const SelectorG:React.FC=()=>{
                     <p className="whois">{cname}</p>
                     <p className="char-exp">{exp}</p>
                 </div>
+                <Link href="/"><a className="gobackM">돌아가기</a></Link>
             </section>
             <Gfooter/>
         </>

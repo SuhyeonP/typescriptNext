@@ -1,0 +1,60 @@
+.pgpg{
+    width: 90vw;
+    margin: 2vh auto;
+    height: 77vh;
+}
+.postC{
+    padding: 2vh 1vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.pagingTable{
+    display: inline-block;
+    text-align: left;
+    border: 2px solid #19ce60;
+    padding: 5px;
+}
+.pagingTable th,.pagingTable td{
+    border: 1px solid black;
+    padding:5px 3px;
+}
+
+.pnp{
+    text-align: center;
+}
+.pgbS{
+    text-align: center;
+    margin: 5vh auto;
+}
+.pgb{
+    display: inline-flex;
+}
+.page-item{
+    padding: 5px;
+    border: 1px solid grey;
+    width: 20px;
+    height: 20px;
+}
+
+.datapg{
+    width: 80vw;
+    margin: 10vh auto 0;
+}
+.datapg div{
+    border: 1px solid #19ce60;
+    padding: 30px 15px 30px;
+    margin: 30px 0;
+
+}
+.user-c,.user-iD{
+    padding: 5px 0;
+}
+.user-iD{
+    font-weight: 800;
+
+}
+.data-info{
+    display: block;
+    text-align: center;
+    padding-bottom: 5vh;
+}
