@@ -156,8 +156,8 @@
     }
     .result-img{
         display:inline-block;
-        height:150px;
-        width:45%;
+        height:auto;
+        width:80%;
     }
     .result-txt{
         width:100%;
@@ -180,14 +180,9 @@
         color:white;
         font-family: 'MapoFlowerIsland';
     }
-    .more-bu{
-        display: block;
-        width:40%;
-        margin:20px auto 0;
-        border:0;
-        background: inherit;
-        color:white;
-        font-size: 14px;
-        font-family: 'KOMACON';
+    .whois{
+        color: white;
+        text-align: center;
+        padding: 10px 0;
     }
 }

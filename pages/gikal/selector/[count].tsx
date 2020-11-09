@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Router from 'next/router';
-import { useCallback} from 'react'
 import {questionArray,imageArray ,answerOb} from "../util/gikalResultArray";
 import {useRouter} from "next/router";
 import Gfooter from "../../../component/gikalFoot";
@@ -27,7 +26,7 @@ const ResultG:React.FC=()=>{
             t+=3;
         }else{
             t-=6;
-            return Router.replace(`/gikal/result/${t}`)
+            return Router.push((`/gikal/result/`+t))
         }
         return Router.replace(`/gikal/selector/${t}`)
     }
