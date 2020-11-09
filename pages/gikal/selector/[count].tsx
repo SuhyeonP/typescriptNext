@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Router from 'next/router';
-import {questionArray,imageArray ,answerOb} from "../util/gikalResultArray";
+import {questionArray,imageArray ,answerOb} from "../../../exporthing/util/gikalResultArray";
 import {useRouter} from "next/router";
 import Gfooter from "../../../component/gikalFoot";
 import Gheader from "../../../component/Gheader";

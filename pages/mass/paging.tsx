@@ -1,6 +1,6 @@
 import * as React from 'react';
 import LayOut from "../../component/layout";
-import {useState, useEffect, memo, useMemo} from 'react';
+import {useState, useEffect, memo} from 'react';
 import axios from 'axios'
 import Posts from "../../component/posts";
 import Pagination from "../../component/pagination";
@@ -11,12 +11,10 @@ export interface Prop{
     paginate:any,
     current:number
 }
-let count=0;
 const Paging:React.FC=memo(()=>{
 
     console.log('render')
     const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(10);
 
@@ -53,8 +51,8 @@ const Paging:React.FC=memo(()=>{
                         </tr>
                         </thead>
                         <tbody>
-                            {currentPost.map((x)=>{
-                                return <Posts posts={x} />
+                            {currentPost.map((x,y)=>{
+                                return <Posts posts={x} key={y} />
                             })}
                         </tbody>
                     </table>

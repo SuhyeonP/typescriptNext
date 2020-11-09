@@ -1,10 +1,9 @@
 import * as React from 'react';
 import LayOut from "../../component/layout";
-import {useEffect, useCallback, useState} from "react";
+import {useEffect, useState} from "react";
 import DummyPost from "../../component/dummyPost";
 import * as faker from 'faker'
 import * as shortId from 'shortid'
-import PropType, {arrayOf} from "prop-types";
 
 export const generateDummyPost = (number) => Array(number).fill(null).map(() => {
     return {id:shortId.generate(),name:faker.name.findName(),content:faker.lorem.paragraph()}
@@ -15,7 +14,7 @@ export const generateDummyPost = (number) => Array(number).fill(null).map(() => 
 let count=1;
 
 const Data=()=>{
-    const [hasMoreData,setHasMoreData]=useState(true);
+    const [hasMoreData]=useState(true);
     const [loadPost,setLoadPost]=useState(false);
     const dd=generateDummyPost(8)
     useEffect(() => {
@@ -48,9 +47,11 @@ const Data=()=>{
             <LayOut/>
             <h2 className="data-info">무한 post 로딩 스크롤 이벤트</h2>
             <section className="datapg">
-                {dd.map((x)=>{
+                {dd.map((x,y)=>{
                     return (
-                        <DummyPost posts={x}/>
+                        <div>
+                            <DummyPost posts={x} key={y}/>
+                        </div>
                     )
                 })}
             </section>

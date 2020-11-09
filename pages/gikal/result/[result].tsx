@@ -2,7 +2,7 @@ import * as React from 'react'
 import Gheader from "../../../component/Gheader";
 import Gfooter from "../../../component/gikalFoot";
 import {useRouter} from "next/router";
-import {expresult,breath,charName,imgsrc} from '../util/gikalResultArray'
+import {expresult,breath,charName,imgsrc} from '../../../exporthing/util/gikalResultArray'
 import Link from "next/link";
 
 const SelectorG:React.FC=()=>{
