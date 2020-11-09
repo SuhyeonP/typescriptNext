@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Router from 'next/router';
-import {questionArray,imageArray ,answerOb} from "../../../exporthing/gikalResultArray";
+import {questionArray,imageArray
+,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10
+} from "../../../exporthing/gikalResultArray";
 import {useRouter} from "next/router";
 import Gfooter from "../../../component/gikalFoot";
 import Gheader from "../../../component/Gheader";
@@ -8,12 +10,43 @@ import Gheader from "../../../component/Gheader";
 const ResultG:React.FC=()=>{
     const router=useRouter();
     const {count}=(router.query);
-    const cn=Number(count)-1
+    const cn:number=Number(count)-1
     const sn=Number(count)
     const imgSrc=imageArray[cn]
     const que=questionArray[cn]
-    const a1=answerOb.list[cn].first
-    const a2=answerOb.list[cn].second
+    let h1,h2:string=''
+    if(cn===0){
+         h1=a1[0]
+         h2=a1[1]
+    }else if(cn===1){
+         h1=a2[0]
+         h2=a2[1]
+    }else if(cn===2){
+         h1=a3[0]
+         h2=a3[1]
+    }else if(cn===3){
+         h1=a4[0]
+         h2=a4[1]
+    }else if(cn===4){
+         h1=a5[0]
+         h2=a5[1]
+    }else if(cn===5){
+         h1=a6[0]
+         h2=a6[1]
+    }else if(cn===6){
+         h1=a7[0]
+         h2=a7[1]
+    }else if(cn===7){
+         h1=a8[0]
+         h2=a8[1]
+    }else if(cn===8){
+         h1=a9[0]
+         h2=a9[1]
+    }else{
+         h1=a10[0]
+         h2=a10[1]
+    }
+    console.log(h1,h2)
 
     const gotoS1=()=>{
         let t=sn;
@@ -25,7 +58,7 @@ const ResultG:React.FC=()=>{
             t+=3;
         }else{
             t-=6;
-            return Router.push((`/gikal/result/`+t))
+            return Router.push('/gikal/result/'+t)
         }
         return Router.replace(`/gikal/selector/${t}`)
     }
@@ -40,9 +73,13 @@ const ResultG:React.FC=()=>{
             t+=4;
         }else{
             t-=6;
-            return Router.replace(`/gikal/result/${t}`)
+            return Router.push('/gikal/result/'+t)
         }
         return Router.replace(`/gikal/selector/${t}`)
+    }
+
+    const test=()=>{
+        console.log('test')
     }
 
     return(
@@ -55,8 +92,8 @@ const ResultG:React.FC=()=>{
                         <p className="question-txt" >{que}</p>
                     </div>
                     <div className="answer">
-                        <button className="selectbu" onClick={gotoS1}>{a1}</button>
-                        <button className="selectbu" onClick={gotoS2}>{a2}</button>
+                        <button className="selectbu" onClick={gotoS1}>{h1}</button>
+                        <button className="selectbu" onClick={gotoS2}>{h2}</button>
                     </div>
                 </div>
 

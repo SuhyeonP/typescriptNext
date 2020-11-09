@@ -24,21 +24,17 @@ export const questionArray:string[]=[
     ,'친구나 반려동물중 단 한명만 살릴수있습니다. 누굴 선택하시겠습니까?'
 ]
 
+export const a1=    [ "사명감","충동"  ]
+export const a2=    [ "우수한 군사","강한 전사" ]
+export const a3=    [ "똑똑한 친구","온화한 친구" ]
+export const a4=    [  "기술을 연구한다.","기술을 연습한다." ]
+export const a5=    [ "명상","모의전투" ]
+export const a6=    [ "밥을 먹는다.","친구와 수다를 나눈다." ]
+export const a7=    [ "적군의 자원이 바닥나길 기다리다.","좋은 기회라 생각하고 공격한다." ]
+export const a8=    ["더 볼것도 없다. 악이다.","그래도 사람은 착한데,,,,처벌만 한다." ]
+export const a9=    [  "지형의 유리함을 살린다.","적의 무기를 뺏는다."  ]
+export const a10=   ["친구","반려동물"]
 
-export const answerOb={
-    list:[
-        {first:"사명감",second:"충동"},
-        {first:"우수한 군사",second:"강한 전사"},
-        {first:"똑똑한 친구",second:"온화한 친구"},
-        {first:"기술을 연구한다.",second:"기술을 연습한다."},
-        {first:"명상",second:"모의전투"},
-        {first:"밥을 먹는다.",second:"친구와 수다를 나눈다."},
-        {first:"적군의 자원이 바닥나길 기다리다.",second:"좋은 기회라 생각하고 공격한다."},
-        {first:"더 볼것도 없다. 악이다.",second:"그래도 사람은 착한데,,,,처벌만 한다."},
-        {first:"지형의 유리함을 살린다.",second:"적의 무기를 뺏는다."},
-        {first:"친구",second:"반려동물"},
-    ]
-}
 
 export const expresult=[
     "이명은 암주이다. 평소에 염불을 외우고 다니며 염주를 걸고 다니고 있다. 체격이 매우 거대하지만 사소한 것에도 눈물을 흘리는 여린 마음을 가진 남성.",
