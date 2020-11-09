@@ -83,7 +83,6 @@ const plantMine = (row: number, cell: number, mine: number): Codes[][] => {
         data[ver][hor] = CODE.MINE;
     }
 
-    console.log(data);
     return data;
 };
 
@@ -110,7 +109,6 @@ const reducer = (state = initialState, action: ReducerActions): ReducerState => 
             const checked: string[] = [];
             let openedCount = 0;
             const checkAround = (row: number, cell: number) => {
-                console.log(row, cell);
                 if (row < 0 || row >= tableData.length || cell < 0 || cell >= tableData[0].length) {
                     return;
                 } // 상하좌우 없는칸은 안 열기
@@ -164,7 +162,6 @@ const reducer = (state = initialState, action: ReducerActions): ReducerState => 
             checkAround(action.row, action.cell);
             let halted = false;
             let result = '';
-            console.log(state.data.row * state.data.cell - state.data.mine, state.openedCount, openedCount);
             if (state.data.row * state.data.cell - state.data.mine === state.openedCount + openedCount) { // 승리
                 halted = true;
                 result = `${state.timer}초만에 승리하셨습니다`;

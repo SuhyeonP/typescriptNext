@@ -4,6 +4,7 @@
         margin: 0 auto;
         text-align: center;
     }
+
     .baseball input{
         width: 50vw;
         height:10vh;
@@ -47,13 +48,16 @@
         margin: 0 auto;
     }
     .mine-section table{
-        width: 40vw;
-        height: 40vw;
         margin: 10vh auto;
+        background-color:#19ce60;
     }
     .mine-result{
         font-weight: 800;
         font-size: 18px;
+    }
+    .mine-section td,.mine-section tr{
+        width: 60px;
+        height: 60px;
     }
 }
 @media (max-width: 1023px) and (min-width: 678px){

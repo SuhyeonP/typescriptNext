@@ -39,7 +39,7 @@ const NumberBaseBall:React.FunctionComponent=(()=>{
                 result:'homerun!'
             }]))
             setResult('homerun!')
-            alert('game is reset')
+            alert('You Got Hom!!!Run!!!')
             setValue('')
             setAnswer(getNumbers)
             setTries([])
