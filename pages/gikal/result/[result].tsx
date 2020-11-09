@@ -2,14 +2,13 @@ import * as React from 'react'
 import Gheader from "../../../component/Gheader";
 import Gfooter from "../../../component/gikalFoot";
 import {useRouter} from "next/router";
-import {expresult,breath,charName,imgsrc} from '../../../exporthing/util/gikalResultArray'
+import {expresult,breath,charName,imgsrc} from '../../../exporthing/gikalResultArray'
 import Link from "next/link";
 
 const SelectorG:React.FC=()=>{
     const router2=useRouter();
     const {result}=(router2.query);
-    const nnn=Number(result)-1
-    console.log(result)
+    const nnn=Number(result)-1;
     const cbreath=breath[nnn];
     const exp=expresult[nnn];
     const imgs=imgsrc[nnn];

@@ -13,7 +13,6 @@ export interface Prop{
 }
 const Paging:React.FC=memo(()=>{
 
-    console.log('render')
     const [posts, setPosts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(10);
@@ -24,7 +23,6 @@ const Paging:React.FC=memo(()=>{
             setPosts(response.data);
         }
         fetch();
-        console.log(posts)
     },[currentPage,postsPerPage]);
 
     function currentPosts(tmp) {

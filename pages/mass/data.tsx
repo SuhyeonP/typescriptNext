@@ -13,17 +13,15 @@ export const generateDummyPost = (number) => Array(number).fill(null).map(() => 
 
 let count=1;
 
-const Data=()=>{
+const DataL=()=>{
     const [hasMoreData]=useState(true);
     const [loadPost,setLoadPost]=useState(false);
     const dd=generateDummyPost(8)
     useEffect(() => {
         function onScroll() {
             if (window.scrollY + document.documentElement.clientHeight > document.documentElement.scrollHeight - 300) {
-                console.log("start")
                 setTimeout(function(){setLoadPost(true);count+=1;},3000);
                 if(hasMoreData&&loadPost){
-                    console.log(count)
                     if(count<50){
                         setTimeout(function(){
                             dd.concat(generateDummyPost(5));
@@ -32,7 +30,6 @@ const Data=()=>{
                     }else{
                         alert("램이 터질거같아용 ㅠㅠ ")
                     }
-                    console.log("loading")
                 }
             }
         }
@@ -59,4 +56,4 @@ const Data=()=>{
     )
 }
 
-export default Data;
+export default DataL;

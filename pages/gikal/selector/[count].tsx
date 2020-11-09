@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Router from 'next/router';
-import {questionArray,imageArray ,answerOb} from "../../../exporthing/util/gikalResultArray";
+import {questionArray,imageArray ,answerOb} from "../../../exporthing/gikalResultArray";
 import {useRouter} from "next/router";
 import Gfooter from "../../../component/gikalFoot";
 import Gheader from "../../../component/Gheader";
@@ -12,7 +12,6 @@ const ResultG:React.FC=()=>{
     const sn=Number(count)
     const imgSrc=imageArray[cn]
     const que=questionArray[cn]
-    console.log(cn,typeof cn)
     const a1=answerOb.list[cn].first
     const a2=answerOb.list[cn].second
 
